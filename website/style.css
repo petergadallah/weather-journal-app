@@ -1,0 +1,162 @@
+body{
+    background:  #ccffff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin:2em
+}
+
+#app{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 2fr 4fr;
+    width:100%;
+    grid-auto-rows: minmax(150px, auto);
+    /* grid-template-columns:  */
+    height:10%;
+    background:  #ccffff;
+    color: #f0d43a;
+    
+    grid-gap: 3em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    grid-template-areas: "aa aa"
+    "ba bb"
+    "ca bb";
+}
+
+.headline{
+    background-color:  #5200cc;
+    height:fit-content;
+    font-size: 1.8em;
+    color:  #ffff80;
+    width: 100%;
+    margin: 0;
+    grid-area: aa;
+    text-align: center;
+
+
+
+}
+.holder{color:red
+
+}
+.zip{grid-area: ba;
+}
+.feel{grid-area: ca;
+justify-content: start;
+height:100%;
+}
+.entry{grid-area: bb;}
+#enterhere{
+    background-color:white;
+    height: 60%;
+    border: solid blue 1pt
+}
+
+#generate{
+    width:100%;
+    background-color: #990000
+
+}
+.title{background-color: blue;
+text-align: center;
+color: #99ffdd
+;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.4em;
+padding:7px;
+}
+
+#entryHolder{
+font-size: 1.1em;
+color: black;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+#date{color: #00b300
+
+
+}
+
+#temp{color: #ff3300
+}
+
+#content{ color:#1a1aff
+}
+
+
+
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:rgb(245, 217, 158);
+    color: #7e2525;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: 1pt solid brown;
+    padding-left:3pt
+}
+
+button{
+    width: 400px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:rgb(245, 217, 158);
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+#cleardata{
+    width:100%;
+    height:10%
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color:   #737373
+
+    ; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
